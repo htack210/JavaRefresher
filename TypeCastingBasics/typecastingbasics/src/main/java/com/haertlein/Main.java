@@ -2,8 +2,8 @@ package com.haertlein;
 
 public class Main {
     public static void main(String[] args) {
-        short a1 = 10;
-        byte a2 = (byte)a1;
+        float a1 = 100.0f;
+        int a2 = (int)a1;
         System.out.println(a2);
     }
 }
