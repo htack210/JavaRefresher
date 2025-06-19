@@ -19,7 +19,7 @@ public class Sample {
         if ((ageOfBoy >= 21) && (ageOfGirl >= 18)) {
             System.out.println("Eligible for marriage");
         } else {
-            System.out.println("Wait for it kiddo!");
+            System.out.println("Wait for it, kiddo!");
         }
 
 
