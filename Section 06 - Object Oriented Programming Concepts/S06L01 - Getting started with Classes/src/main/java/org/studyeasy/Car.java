@@ -5,6 +5,10 @@ public class Car {
     private String make;
     private String model;
     private int doors;
+    private boolean doorsClosed;
+    private boolean engineOn;
+    private int currSpeed;
+    private boolean driverSeated;
     private String engine;
     private String driver;
     private int speed;
@@ -77,6 +81,42 @@ public class Car {
 
     public int setYear(int year) {
         return this.year;
+    }
+
+    public boolean getDoorsClosed() {
+        return doorsClosed;
+    }
+
+    public void setDoorsClosed(boolean doorsClosed) {
+        this.doorsClosed = doorsClosed;
+    }
+
+    public boolean getEngineOn() {
+        return engineOn;
+    }
+
+    public void setEngineOn(boolean engineOn) {
+        this.engineOn = engineOn;
+    }
+
+    public boolean getDriverSeated() {
+        return driverSeated;
+    }
+
+    public void setDriverSeated(boolean driverSeated) {
+        this.driverSeated = driverSeated;
+    }
+
+    public int getCurrSpeed() {
+        return currSpeed;
+    }
+
+    public void setCurrSpeed(int currSpeed) {
+        this.currSpeed = currSpeed;
+    }
+
+    public boolean isRunning() {
+        return doorsClosed && engineOn && driverSeated && currSpeed > 0;
     }
 
 }
