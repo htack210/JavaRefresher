@@ -11,9 +11,9 @@ public class Car {
     private boolean driverSeated;
     private String engine;
     private String driver;
-    private int speed;
+    private String speed;
 
-    public Car(int year, String make, String model, int doors, String engine, String driver, int speed) {
+    public Car(int year, String make, String model, int doors, String engine, String driver, String speed) {
         this.year = year;
         this.make = make;
         this.model = model;
@@ -35,8 +35,12 @@ public class Car {
         this.engine = engine;
     }
 
-    public void setSpeed(int speed) {
+    public void setSpeed(String speed) {
         this.speed = speed;
+    }
+
+    public String getSpeed() {
+        return speed;
     }
 
     public int getDoors() {
@@ -45,10 +49,6 @@ public class Car {
 
     public String getEngine() {
         return engine;
-    }
-
-    public int getSpeed() {
-        return speed;
     }
 
     public String getDriver() {
