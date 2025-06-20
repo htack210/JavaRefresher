@@ -4,8 +4,8 @@ public class Sample {
     public static void main(String[] args) {
         sum(1,2);
         sum(2.1f,2.2f);
-        sum(1.2, 20);
-        sum(1,2.0);
+        sum(1.2d, 20);
+        sum(1,2.0d);
 
 
     }
