@@ -23,6 +23,13 @@ public class Car {
         this.speed = speed;
     }
 
+    public Car(String make, String model, int doors, String engine) {
+        this.make = make;
+        this.model = model;
+        this.doors = doors;
+        this.engine = engine;
+    }
+
     public Car() {
         // Default constructor
     }
