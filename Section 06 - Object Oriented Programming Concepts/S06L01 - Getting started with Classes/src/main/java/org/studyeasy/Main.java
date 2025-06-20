@@ -16,10 +16,11 @@ public class Main {
 
         System.out.println("\n*******************************************************\n");
 
-        Car myCar = new Car(2003, "Ford", "F-150", 4, "4.2L V6", "Glenn", 140);
+        Car myCar = new Car(2025, "Corvette", "Stringray", 2, "6.2L V8", "Glenn", 140);
 
         System.out.println(
-                "My car \nYear: " + myCar.getYear() + "\nMake: " + myCar.getMake() + "\nSpeed: " + myCar.getSpeed()
+                "My car \nYear: " + myCar.getYear() + "\nMake: " + myCar.getMake() + "\nModel: " + myCar.getModel()
+                        + "\nSpeed: " + myCar.getSpeed()
                         + "MPH"
                         + "\nEngine: " + myCar.getEngine()
                         + "\nNum doors: "
