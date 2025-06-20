@@ -12,14 +12,13 @@ public class TestFormat {
 
         switch (n) {
             case 1 -> System.out.println(n);
-            case 2 -> System.out.println(n*2);
+            case 2 -> System.out.println(n * 2);
 
         }
 
         float x = 10;
         System.out.println(x);
         System.out.println(n);
-
 
     }
 }
