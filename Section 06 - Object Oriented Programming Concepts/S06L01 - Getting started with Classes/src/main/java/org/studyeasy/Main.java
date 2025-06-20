@@ -13,6 +13,7 @@ public class Main {
                 "Car speed: " + car.getSpeed() + "MPH" + "\nEngine: " + car.getEngine() + "\nNum doors: "
                         + car.getDoors()
                         + "\nDriver: " + car.getDriver());
+
         System.out.println("\n*******************************************************\n");
 
         Car myCar = new Car(2003, "Ford", "F-150", 4, "4.2L V6", "Glenn", 140);
@@ -25,5 +26,6 @@ public class Main {
                         + myCar.getDoors()
                         + "\nDriver: " + myCar.getDriver());
 
+        System.out.println("\n*******************************************************\n");
     }
 }
