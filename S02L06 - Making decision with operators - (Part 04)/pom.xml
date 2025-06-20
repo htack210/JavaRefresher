@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>decisions-04</artifactId>
+    <artifactId>for_loop_04</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
