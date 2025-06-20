@@ -8,9 +8,22 @@ public class Main {
         car.setDoors(4);
         car.setEngine("4.2L v6");
         car.setDriver("Green");
+
         System.out.println(
                 "Car speed: " + car.getSpeed() + "MPH" + "\nEngine: " + car.getEngine() + "\nNum doors: "
                         + car.getDoors()
                         + "\nDriver: " + car.getDriver());
+        System.out.println("\n*******************************************************\n");
+
+        Car myCar = new Car(2003, "Ford", "F-150", 4, "4.2L V6", "Glenn", 140);
+
+        System.out.println(
+                "My car \nYear: " + myCar.getYear() + "\nMake: " + myCar.getMake() + "\nSpeed: " + myCar.getSpeed()
+                        + "MPH"
+                        + "\nEngine: " + myCar.getEngine()
+                        + "\nNum doors: "
+                        + myCar.getDoors()
+                        + "\nDriver: " + myCar.getDriver());
+
     }
 }

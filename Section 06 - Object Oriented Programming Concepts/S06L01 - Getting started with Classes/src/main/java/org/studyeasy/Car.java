@@ -1,10 +1,27 @@
 package org.studyeasy;
 
 public class Car {
+    private int year;
+    private String make;
+    private String model;
     private int doors;
     private String engine;
     private String driver;
     private int speed;
+
+    public Car(int year, String make, String model, int doors, String engine, String driver, int speed) {
+        this.year = year;
+        this.make = make;
+        this.model = model;
+        this.doors = doors;
+        this.engine = engine;
+        this.driver = driver;
+        this.speed = speed;
+    }
+
+    public Car() {
+        // Default constructor
+    }
 
     public void setDoors(int doors) {
         this.doors = doors;
@@ -36,6 +53,30 @@ public class Car {
 
     public void setDriver(String driver) {
         this.driver = driver;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public int setYear(int year) {
+        return this.year;
     }
 
 }
