@@ -32,7 +32,7 @@ public class Main {
                         + "\nDriver: " + myCar.getDriver());
 
         if (myCar.isRunning()) {
-            System.out.println("Current speed is " + myCar.getCurrSpeed() + " MPH");
+            System.out.println("Caris running! Current speed is " + myCar.getCurrSpeed() + " MPH.");
         } else {
             System.out.println("My car is stopped.");
         }
