@@ -12,6 +12,11 @@ public class Car {
     private String engine;
     private String driver;
     private String speed;
+    public String steering;
+    public String musicSystem;
+    public String airConditioner;
+    public String fridge;
+    public String entertainmentSystem;
 
     public Car(int year, String make, String model, int doors, String engine, String driver, String speed) {
         this.year = year;

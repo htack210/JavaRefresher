@@ -22,6 +22,7 @@ public class Main {
         myCar.setDoorsClosed(true);
         myCar.setEngineOn(true);
         myCar.setCurrSpeed(100);
+        myCar.steering = "Power Steering";
 
         System.out.println(
                 "My car \nYear: " + myCar.getYear() + "\nMake: " + myCar.getMake() + "\nModel: " + myCar.getModel()
@@ -29,6 +30,8 @@ public class Main {
                         + "\nEngine: " + myCar.getEngine()
                         + "\nNum doors: "
                         + myCar.getDoors()
+                        + "\nSteering: "
+                        + myCar.steering
                         + "\nDriver: " + myCar.getDriver());
 
         if (myCar.isRunning()) {
