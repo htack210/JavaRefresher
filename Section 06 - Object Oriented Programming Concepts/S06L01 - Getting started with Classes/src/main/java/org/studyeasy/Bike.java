@@ -1,6 +1,6 @@
 package org.studyeasy;
 
-public class Bike {
+public class Bike extends Vehicle {
     public String handle;
     public int gears;
 

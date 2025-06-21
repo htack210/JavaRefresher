@@ -1,6 +1,6 @@
 package org.studyeasy;
 
-public class Car {
+public class Car extends Vehicle {
     private int year;
     private String make;
     private String model;
@@ -9,7 +9,6 @@ public class Car {
     private boolean engineOn;
     private int currSpeed;
     private boolean driverSeated;
-    private String engine;
     private String driver;
     private String speed;
     public String steering;

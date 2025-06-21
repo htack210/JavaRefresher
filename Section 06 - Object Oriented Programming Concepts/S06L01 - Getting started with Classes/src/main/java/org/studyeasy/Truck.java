@@ -1,6 +1,6 @@
 package org.studyeasy;
 
-public class Truck {
+public class Truck extends Vehicle {
     public String steering;
     public String musicSystem;
     public String airConditioner;
