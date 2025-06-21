@@ -11,18 +11,18 @@ public class Car extends Vehicle {
     private boolean driverSeated;
     private String driver;
     private String speed;
-    public String steering;
-    public String musicSystem;
-    public String airConditioner;
-    public String fridge;
-    public String entertainmentSystem;
+    private String steering = "Power";
+    private String musicSystem = "Basic";
+    private String airConditioner = "Front Only";
+    private String fridge = "None";
+    private String entertainmentSystem = "None";
 
     public Car(int year, String make, String model, int doors, String engine, String driver, String speed) {
         this.year = year;
         this.make = make;
         this.model = model;
         this.doors = doors;
-        this.engine = engine;
+        setEngine(engine); // Use Vehicle's setter
         this.driver = driver;
         this.speed = speed;
     }
@@ -31,7 +31,7 @@ public class Car extends Vehicle {
         this.make = make;
         this.model = model;
         this.doors = doors;
-        this.engine = engine;
+        setEngine(engine); // Use Vehicle's setter
     }
 
     public Car() {
@@ -40,10 +40,6 @@ public class Car extends Vehicle {
 
     public void setDoors(int doors) {
         this.doors = doors;
-    }
-
-    public void setEngine(String engine) {
-        this.engine = engine;
     }
 
     public void setSpeed(String speed) {
@@ -56,10 +52,6 @@ public class Car extends Vehicle {
 
     public int getDoors() {
         return doors;
-    }
-
-    public String getEngine() {
-        return engine;
     }
 
     public String getDriver() {
@@ -128,6 +120,46 @@ public class Car extends Vehicle {
 
     public boolean isRunning() {
         return doorsClosed && engineOn && driverSeated && currSpeed > 0;
+    }
+
+    public String getSteering() {
+        return steering;
+    }
+
+    public void setSteering(String steering) {
+        this.steering = steering;
+    }
+
+    public String getMusicSystem() {
+        return musicSystem;
+    }
+
+    public String getAirConditioner() {
+        return airConditioner;
+    }
+
+    public String getFridge() {
+        return fridge;
+    }
+
+    public String getEntertainmentSystem() {
+        return entertainmentSystem;
+    }
+
+    public void setMusicSystem(String musicSystem) {
+        this.musicSystem = musicSystem;
+    }
+
+    public void setAirConditioner(String airConditioner) {
+        this.airConditioner = airConditioner;
+    }
+
+    public void setFridge(String fridge) {
+        this.fridge = fridge;
+    }
+
+    public void setEntertainmentSystem(String entertainmentSystem) {
+        this.entertainmentSystem = entertainmentSystem;
     }
 
 }
