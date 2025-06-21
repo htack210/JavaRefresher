@@ -18,11 +18,12 @@ public class Car extends Vehicle {
     private String entertainmentSystem = "None";
 
     public Car(int year, String make, String model, int doors, String engine, String driver, String speed) {
+        super(); // or super(engine) if Vehicle had such a constructor
         this.year = year;
         this.make = make;
         this.model = model;
         this.doors = doors;
-        setEngine(engine); // Use Vehicle's setter
+        super.setEngine(engine); // Use Vehicle's setter
         this.driver = driver;
         this.speed = speed;
     }
@@ -31,7 +32,7 @@ public class Car extends Vehicle {
         this.make = make;
         this.model = model;
         this.doors = doors;
-        setEngine(engine); // Use Vehicle's setter
+        super.setEngine(engine); // Use Vehicle's setter
     }
 
     public Car() {
@@ -160,6 +161,16 @@ public class Car extends Vehicle {
 
     public void setEntertainmentSystem(String entertainmentSystem) {
         this.entertainmentSystem = entertainmentSystem;
+    }
+
+    @Override
+    public void setEngine(String engine) {
+        super.setEngine(engine);
+    }
+
+    @Override
+    public String getEngine() {
+        return super.getEngine();
     }
 
 }
