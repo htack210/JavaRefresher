@@ -65,4 +65,8 @@ public class Vehicle {
         this.FuelTankCapacity = FuelTankCapacity;
     }
 
+    public boolean isRunning() {
+        return false;
+    }
+
 }

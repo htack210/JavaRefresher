@@ -56,5 +56,7 @@ public class Main {
         }
 
         System.out.println("\n*******************************************************\n");
+
+        // System.out.println(myCar.toString());
     }
 }

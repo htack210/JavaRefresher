@@ -23,7 +23,7 @@ public class Car extends Vehicle {
         this.make = make;
         this.model = model;
         this.doors = doors;
-        super.setEngine(engine); // Use Vehicle's setter
+        super.setEngine(engine);
         this.driver = driver;
         this.speed = speed;
     }
@@ -119,6 +119,7 @@ public class Car extends Vehicle {
         this.currSpeed = currSpeed;
     }
 
+    @Override
     public boolean isRunning() {
         return doorsClosed && engineOn && driverSeated && currSpeed > 0;
     }
@@ -164,13 +165,21 @@ public class Car extends Vehicle {
     }
 
     @Override
-    public void setEngine(String engine) {
-        super.setEngine(engine);
-    }
-
-    @Override
-    public String getEngine() {
-        return super.getEngine();
+    public String toString() {
+        return "Car [year=" + year + ", make=" + make + ", model=" + model + ", doors=" + doors + ", doorsClosed="
+                + doorsClosed + ", engineOn=" + engineOn + ", currSpeed=" + currSpeed + ", driverSeated=" + driverSeated
+                + ", driver=" + driver + ", speed=" + speed + ", steering=" + steering + ", musicSystem=" + musicSystem
+                + ", airConditioner=" + airConditioner + ", fridge=" + fridge + ", entertainmentSystem="
+                + entertainmentSystem + ", getTransmission()=" + getTransmission() + ", getGears()=" + getGears()
+                + ", getEngine()=" + getEngine() + ", getLights()=" + getLights() + ", getWheels()=" + getWheels()
+                + ", getSeats()=" + getSeats() + ", getFuelTankCapacity()=" + getFuelTankCapacity() + ", getSpeed()="
+                + getSpeed() + ", getDoors()=" + getDoors() + ", getClass()=" + getClass() + ", getDriver()="
+                + getDriver() + ", getMake()=" + getMake() + ", getModel()=" + getModel() + ", getYear()=" + getYear()
+                + ", getDoorsClosed()=" + getDoorsClosed() + ", getEngineOn()=" + getEngineOn() + ", getDriverSeated()="
+                + getDriverSeated() + ", getCurrSpeed()=" + getCurrSpeed() + ", isRunning()=" + isRunning()
+                + ", getSteering()=" + getSteering() + ", getMusicSystem()=" + getMusicSystem()
+                + ", getAirConditioner()=" + getAirConditioner() + ", getFridge()=" + getFridge()
+                + ", getEntertainmentSystem()=" + getEntertainmentSystem() + "]";
     }
 
 }
