@@ -1,15 +1,18 @@
 package com.studyeasy;
 
 public class Reptile extends Animal {
-    private String skin = "Dry";
-    private String eggs = "soft-shelled";
+    private String skin;
+    private String eggs;
 
     public Reptile() {
         // Default constructor
     }
 
-    public Reptile(int height, int weight, String animalType, boolean isIsVertebrate, String bloodType) {
-
+    public Reptile(int height, int weight, String animalType, boolean isIsVertebrate, String bloodType, String eggs,
+            String skin) {
+        super(height, weight, animalType, isIsVertebrate = true, bloodType);
+        this.eggs = "soft-shell";
+        this.skin = "dry";
     }
 
     /**
